@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/about'
+
   root 'frustrations#index'
   resources :users, only: [ :new, :create, :show ]
   resources :sessions, only: [:new, :create]
