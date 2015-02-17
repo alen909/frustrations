@@ -1,0 +1,6 @@
+<h2>User</h2>
+
+<h2>Name: <%= @user.name %></h2>
+<h2>E-Mail: <%= @user.email.downcase %></h2>
+<h2>Got frustrated first time: <%= @user.created_at %></h2>
+<%= image_tag @user.avatar_url(:standard) %><br />

@@ -1,0 +1,28 @@
+<%= link_to "Frustration", new_frustration_path,class: 'btn btn-primary' %>
+
+<div class="row" id="frustration_list">
+  <% @frustrations.each_with_index do |frustration, i| -%>
+    <div class="col-md-4 one_frustration">
+      <div class="media">
+        <div class="media-left">
+          <%= link_to frustration_path(frustration) do %>
+            <% unless frustration.cover_url.blank? %>
+              <%= image_tag frustration.cover_url (:cover), alt: frustration.title, class: "media-object" %>
+            <% else %>
+              <%= image_tag('noimg.png', width: 100, class: "media-object") %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading"><%= link_to frustration.title, frustration_path(frustration) %></h4>
+          <%= simple_format frustration.body %><br>
+          <% unless frustration.user.avatar_url.nil? %>
+            <%= image_tag frustration.user.avatar_url(:glavatar) %>
+          <% end %>
+          <%= frustration.user.name %>,
+          <%= (frustration.created_at) %>
+        </div>
+      </div>
+    </div>
+  <%end%>
+</div>

@@ -1,0 +1,63 @@
+$navbar-default-bg: #fff;
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+#contenat {
+  margin-top: 80px;
+}
+
+.button_to {
+  display: inline;
+}
+
+.container-fluid {
+  max-width: 1024px;
+}
+
+#footer {
+  margin-top: 30px;
+  background-color: $navbar-default-bg;
+  .container-fluid {
+    padding: 12px 20px;
+  }
+}
+
+#frustration_list {
+  padding-left: 15px;
+
+  .one_frustration {
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    padding-top: 20px;
+    margin: 0 0 15px 0;
+    width: 30%;
+
+    .media-left { height: 160px; }
+  }
+}
+@media (max-width: 930px) { /* tablet */
+  .col-md-4 {
+    width: 47% !important;
+  }
+}
+
+@media (max-width: 700px) { /* phone */
+  .col-md-4 {
+    width: 95% !important;
+  }
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

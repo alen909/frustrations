@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyString
+  author: MyText
+  user_id: 1
+  likes: 1
+  extlnk: MyString
+  att1: MyString
+  att2: MyString
+  att3: MyString
+  frustlevel: 1
+  cls: 1
+  act: false
+
+two:
+  title: MyString
+  body: MyString
+  author: MyText
+  user_id: 1
+  likes: 1
+  extlnk: MyString
+  att1: MyString
+  att2: MyString
+  att3: MyString
+  frustlevel: 1
+  cls: 1
+  act: false

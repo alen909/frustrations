@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dwfkkmoov
+  api_key: '113524157178558'
+  api_secret: Is0s0tkJ29s1S1HU77qPqh7p4Wc
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dwfkkmoov
+  api_key: '113524157178558'
+  api_secret: Is0s0tkJ29s1S1HU77qPqh7p4Wc
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dwfkkmoov
+  api_key: '113524157178558'
+  api_secret: Is0s0tkJ29s1S1HU77qPqh7p4Wc
+  enhance_image_tag: true
+  static_image_support: false

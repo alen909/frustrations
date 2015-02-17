@@ -1,0 +1,19 @@
+Zbog nedostatka vremena sam se ipak odlucio da ostavim vlastito kreiranje korisnickih sesija kroz "sessions" kontroler gdje se nalazi i dio koji hendluje usere sa facebooka.
+Pozivanje unless na validates password nije radilo pa sam definisao malo drugaciji create koji u sebi ipak sadrzi shuffle korisnickog passworda za facebook usere.
+
+Svi useri su u jednoj tabeli.
+
+Aplikacija na facebooku je na zalost u sandbox mode-u te ju je moguce koristiti samo od strane usera koji je kreirao. Koristio sam neki fake facebook account koji mozes slobodno da koristis, login je konjina909@yahoo.com a password ovoono.
+
+Problem sa java skriptom za facebook sam otkrio kasnije kroz konfiguraciju masonry-a, problem je bio u turbolinks-u :-/.
+
+Za upload profilnih slika usera kao za upload covera za postove sam koristio carrierwave sa cloudinary gemom.
+
+Za index stranicu nisam koristio kompletan masonry gem nego samo jednu single skriptu, pre tezak je i ukljucuje cak i isotope. Sa single javascript fajlom i dvije linije css-a sam uspio postici ono sto sam zelio.
+
+Database je pg, ostala je moja konfiguracija username-a i passworda. Ostavio sam i sqlite3 fajl u folderu aplikacije u slucaju da bude problema.
+
+Za autorizaciju i stajling nisam imao dovoljno vremena, tako da su neki linkovi vidni i drugim userima ali ih (barem u developmentu) ne mogu brisati. I evo u zadnji trenutak ispravih flash message koji je greskom ostao notice a ne alert :).
+
+Ostavio sam prvog usera u seeds fajlu koji je moguce kreirati odma nakon migracije.
+
