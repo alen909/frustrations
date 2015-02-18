@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   def require_user
     unless current_user
       redirect_to frustrations_url,
-      notice: "You are not signed in"
+      alert: "You are not signed in"
     end
   end
 end
