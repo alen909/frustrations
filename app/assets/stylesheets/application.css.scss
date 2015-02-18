@@ -2,6 +2,11 @@ $navbar-default-bg: #fff;
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+body {
+  font-family: verdana;
+  font-size: 14px;
+}
+
 #contenat {
   margin-top: 80px;
 }
