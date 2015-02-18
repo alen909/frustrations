@@ -14,9 +14,10 @@
       <p><span class="glyphicon glyphicon-time"></span><%= (@frustration.created_at) %></p>
 
       <hr>
-      
-        <% unless @frustration.cover_url.nil? %>
-        <%= image_tag(@frustration.cover_url, :alt => @frustration.title) %>
+
+        <% unless  @frustration.cover_url.nil?%>
+          <%= image_tag(@frustration.cover_url, :alt => @frustration.title) %>
+        <% end %>
 
       <hr>
       
