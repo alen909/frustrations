@@ -19,8 +19,9 @@
           <% unless frustration.user.avatar_url.nil? %>
             <%= image_tag frustration.user.avatar_url(:glavatar) %>
           <% end %>
-          <%= frustration.user.name %>,
-          <%= (frustration.created_at) %>
+          <%= frustration.user.name %>,<br>
+          <%#= frustration.created_at.to_s(:short) %>
+          <%= frustration.created_at.strftime("%d %b at %H:%M") %>
         </div>
       </div>
     </div>

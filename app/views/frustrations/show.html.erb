@@ -11,14 +11,14 @@
 
       <hr>
 
-      <p><span class="glyphicon glyphicon-time"></span><%= (@frustration.created_at) %></p>
+      <p><span class="glyphicon glyphicon-time"></span><%= (@frustration.created_at.strftime("%d %b at %H:%M")) %></p>
 
       <hr>
-
+      <div>
         <% unless  @frustration.cover_url.nil?%>
-          <%= image_tag(@frustration.cover_url, :alt => @frustration.title) %>
+          <%= image_tag(@frustration.cover_url, :class => "sljika", :alt => @frustration.title) %>
         <% end %>
-
+      </div>
       <hr>
       
       <p class="lead"><%= simple_format(@frustration.body) %></p>
