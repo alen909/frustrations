@@ -10,14 +10,14 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   version :standard do
     eager
-    process :crop_to_fit => [1024, 768], :gravity => :facees, :effect => "pixelate_faces"
-    cloudinary_transformation :quality => 80
+    process :crop_to_fit => [1024, 768], :gravity => :facees
+    cloudinary_transformation :quality => 80, :effect => "pixelate_faces"
   end
 
   version :glavatar do
     eager
     cloudinary_transformation :glavatar => "brightness:30", :radius => :max,
-      :width => 50, :height => 50, :crop => :thumb, :gravity => :face, :effect => "pixelate_faces"
+      :width => 40, :height => 40, :crop => :thumb, :gravity => :face
   end
 
   # Include RMagick or MiniMagick support:
