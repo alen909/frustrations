@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'frustrations#index'
   get 'about' => 'static_pages#about'
+  get 'privacy' => 'static_pages#privacy'
   resources :users, only: [ :new, :create, :show ]
   resources :sessions, only: [:new, :create]
   get 'auth/:provider/callback', to: 'sessions#create'
