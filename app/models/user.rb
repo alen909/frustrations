@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_secure_password unless: :oauth_token
   
   validates :name, presence: true
-  validates :email, presence: true, uniqueness: true, unless: :oauth_token
+  validates :email, presence: true, uniqueness: true#, unless: :oauth_token
   
   #validates :password, presence: true, unless: :oauth_token     #ne radi
 
