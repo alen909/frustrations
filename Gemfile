@@ -29,13 +29,14 @@ gem 'bootstrap-sass'
 gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'cloudinary'
-gem 'puma'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production do
+  gem 'puma'
   gem 'pg'
   gem 'rails_12factor'
 end
