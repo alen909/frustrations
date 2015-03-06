@@ -29,6 +29,7 @@ gem 'bootstrap-sass'
 gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'cloudinary'
+gem 'puma'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
